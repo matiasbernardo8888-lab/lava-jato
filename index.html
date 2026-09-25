@@ -1,0 +1,917 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Williams Racing Cars Wash — Detailing automobilistico a [CITTÀ]</title>
+<meta name="description" content="Detailing, lucidatura, protezione ceramica e cura professionale dell'auto a [CITTÀ]. Prenota il tuo trattamento presso Williams Racing Cars Wash.">
+<meta property="og:title" content="Williams Racing Cars Wash — Detailing automobilistico">
+<meta property="og:description" content="Cura automobilistica. Senza compromessi. Detailing e protezione a [CITTÀ].">
+<meta property="og:type" content="website">
+<script src="./vendor/react.js"></script>
+<script src="./vendor/react-dom.js"></script>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wdth,wght@0,62..125,100..900;1,62..125,100..900&amp;family=Instrument+Serif:ital@0;1&amp;family=JetBrains+Mono:wght@400;500&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0;background:#0b0b0c;font-family:'Archivo',system-ui,sans-serif;color:#efebe4;-webkit-font-smoothing:antialiased}
+a{color:#efebe4;text-decoration:none}a:hover{color:#ffffff}
+:focus-visible{outline:1px solid #efebe4;outline-offset:4px}
+.d{font-family:'Archivo',sans-serif;font-stretch:122%;font-weight:800;text-transform:uppercase;letter-spacing:-0.03em;line-height:0.9}
+.s{font-family:'Instrument Serif',Georgia,serif;font-style:italic;font-weight:400;letter-spacing:-0.01em;text-transform:none}
+.m{font-family:'JetBrains Mono',ui-monospace,monospace;font-size:11px;letter-spacing:0.16em;text-transform:uppercase;font-weight:400}
+.ph{position:relative;overflow:hidden;background:#121214}
+.ph-in{position:absolute;inset:-8%;background:radial-gradient(90% 70% at 66% 40%,#2c2c30 0%,#17171a 48%,#0d0d0e 100%);will-change:transform;transition:transform 1.6s cubic-bezier(.19,1,.22,1)}
+.ph-frame{position:absolute;inset:18px;border:1px solid rgba(239,235,228,.07);pointer-events:none}
+.ph-lab{position:absolute;left:32px;bottom:28px;color:#85817b}
+.nav{transition:background-color .6s,border-color .6s;border-bottom:1px solid rgba(239,235,228,0)}
+.nav.solid{background-color:rgba(11,11,12,.74);backdrop-filter:blur(18px);-webkit-backdrop-filter:blur(18px);border-bottom-color:rgba(239,235,228,.08)}
+.nl{position:relative;color:#a39f98;transition:color .4s}
+.nl:hover{color:#efebe4}
+.nl::after{content:'';position:absolute;left:0;right:0;bottom:-7px;height:1px;background:currentColor;transform:scaleX(0);transform-origin:right;transition:transform .7s cubic-bezier(.19,1,.22,1)}
+.nl:hover::after{transform:scaleX(1);transform-origin:left}
+.btn{display:inline-flex;align-items:center;gap:16px;height:58px;padding:0 30px;background:#efebe4;color:#0b0b0c;font-family:'JetBrains Mono',monospace;font-size:12px;letter-spacing:.16em;font-weight:500;text-transform:uppercase;transition:background-color .5s,color .5s,transform .6s cubic-bezier(.19,1,.22,1)}
+.btn:hover{background:#ffffff;color:#0b0b0c}
+.btn-o{display:inline-flex;align-items:center;gap:16px;height:58px;padding:0 30px;border:1px solid rgba(239,235,228,.3);color:#efebe4;font-family:'JetBrains Mono',monospace;font-size:12px;letter-spacing:.16em;font-weight:500;text-transform:uppercase;transition:border-color .5s,transform .6s cubic-bezier(.19,1,.22,1)}
+.btn-o:hover{border-color:#efebe4;color:#efebe4}
+.lnk{display:inline-flex;align-items:center;gap:12px;color:#efebe4;border-bottom:1px solid rgba(239,235,228,.3);padding-bottom:8px;transition:border-color .5s,gap .6s cubic-bezier(.19,1,.22,1)}
+.lnk:hover{color:#efebe4;border-color:#efebe4;gap:20px}
+.hl{display:block;overflow:hidden;padding-bottom:0.06em}
+.hl>span{display:block;animation:rise 1.8s cubic-bezier(.19,1,.22,1) both}
+.fade{animation:fadein 1.6s cubic-bezier(.19,1,.22,1) both}
+.heroimg{animation:heroin 2.6s cubic-bezier(.19,1,.22,1) both}
+@keyframes rise{from{transform:translate3d(0,108%,0)}to{transform:none}}
+@keyframes fadein{from{opacity:0;transform:translate3d(0,14px,0)}to{opacity:1;transform:none}}
+@keyframes heroin{from{clip-path:inset(12% 8% 12% 8%);transform:scale(1.06)}to{clip-path:inset(0 0 0 0);transform:none}}
+@keyframes scrollcue{0%{transform:scaleY(0);transform-origin:top}45%{transform:scaleY(1);transform-origin:top}55%{transform:scaleY(1);transform-origin:bottom}100%{transform:scaleY(0);transform-origin:bottom}}
+.cue{animation:scrollcue 2.8s cubic-bezier(.77,0,.18,1) infinite}
+.anim [data-rv]{opacity:0;transform:translate3d(0,26px,0);transition:opacity 1.3s cubic-bezier(.19,1,.22,1),transform 1.5s cubic-bezier(.19,1,.22,1),clip-path 1.6s cubic-bezier(.77,0,.18,1)}
+.anim [data-rv="left"]{transform:translate3d(-56px,0,0)}
+.anim [data-rv="right"]{transform:translate3d(56px,0,0)}
+.anim [data-rv="clip"]{opacity:1;transform:none;clip-path:inset(0 0 100% 0)}
+.anim [data-rv="line"]{opacity:1;transform:scaleX(0);transform-origin:left}
+.anim [data-rv].in{opacity:1;transform:none;clip-path:inset(0 0 0 0)}
+.anim [data-d="1"]{transition-delay:.12s}.anim [data-d="2"]{transition-delay:.24s}.anim [data-d="3"]{transition-delay:.36s}.anim [data-d="4"]{transition-delay:.48s}
+.w{transition:opacity .7s cubic-bezier(.19,1,.22,1)}
+.srow{display:flex;align-items:center;gap:28px;height:72px;border-top:1px solid #232326;cursor:pointer;background:none;border-left:0;border-right:0;border-bottom:0;width:100%;padding:0;text-align:left;font:inherit;color:inherit}
+.srow>span{transition:color .6s,transform .8s cubic-bezier(.19,1,.22,1)}
+.tile{position:relative;overflow:hidden;display:block}
+.tile .ov{position:absolute;inset:0;background:rgba(11,11,12,.5);opacity:0;transition:opacity .9s cubic-bezier(.19,1,.22,1);display:flex;align-items:flex-end;justify-content:space-between;padding:28px}
+.tile:hover .ov{opacity:1}
+.tile:hover .ph-in{transform:scale(1.045)}
+.fq{background:none;border:0;color:inherit;width:100%;text-align:left;cursor:pointer;font:inherit;padding:0}
+.rng{position:absolute;inset:0;width:100%;height:100%;margin:0;opacity:0;cursor:ew-resize;-webkit-appearance:none;appearance:none;z-index:5}
+.cur{position:fixed;left:0;top:0;z-index:9999;pointer-events:none;opacity:0;transition:opacity .4s}
+.has-cursor .cur{opacity:1}
+.cur-dot{border-radius:50%;border:1px solid rgba(239,235,228,.75);transform:translate(-50%,-50%);display:flex;align-items:center;justify-content:center;transition:width .6s cubic-bezier(.19,1,.22,1),height .6s cubic-bezier(.19,1,.22,1),background-color .5s}
+.wa{position:fixed;right:28px;bottom:28px;z-index:60}
+.intro-ui{transition:opacity .8s cubic-bezier(.19,1,.22,1)}
+.wa{transition:opacity .6s,transform .6s cubic-bezier(.19,1,.22,1)}
+.intro-on .wa{opacity:0;pointer-events:none;transform:translateY(12px)}
+.anim:not(.hero-in) #top .hl>span,.anim:not(.hero-in) #top .fade,.anim:not(.hero-in) #top .heroimg{animation-play-state:paused}
+@media (pointer: coarse){.cur{display:none}}
+</style>
+</helmet>
+<sc-if value="{{isMob}}" hint-placeholder-val="{{false}}">
+<dc-import name="Mobile" accent="{{accent}}" hint-size="100%,100vh"></dc-import>
+</sc-if>
+<sc-if value="{{isDesk}}" hint-placeholder-val="{{true}}">
+<div class="site" data-site="desk" style="width: 1440px; height: 16700px; position: relative; background: #0b0b0c; color: #efebe4; overflow-x: clip">
+
+<!-- CURSORE -->
+<div class="cur" data-cursor-el="1" aria-hidden="true">
+<div class="cur-dot" style="width: {{cw}}px; height: {{cw}}px; background-color: {{cbg}}">
+<span class="m" style="font-size: 10px; color: #0b0b0c; font-weight: 500; opacity: {{clo}}">{{cl}}</span>
+</div>
+</div>
+
+<!-- INTRO: animazione a scorrimento prima del sito -->
+<section data-intro-seq="1" aria-label="Introduzione: la perfezione è nei dettagli" style="position: relative; height: 3600px; background: #050505">
+<div data-intro-stage="1" style="position: sticky; top: 0; height: 100vh; overflow: hidden; background: #050505">
+<canvas data-intro-canvas="1" role="img" aria-label="Un operatore asciuga il vetro con un panno in microfibra; poi una Mercedes nera lucida in uno studio con luci a LED. La perfezione è nei dettagli." style="position: absolute; inset: 0; width: 100%; height: 100%; display: block"></canvas>
+<div aria-hidden="true" style="position: absolute; inset: 0; pointer-events: none; background: linear-gradient(180deg, rgba(5,5,5,.7) 0%, rgba(5,5,5,0) 16%, rgba(5,5,5,0) 78%, rgba(5,5,5,.75) 100%)"></div>
+<div style="position: absolute; left: 56px; right: 56px; top: 28px; display: flex; justify-content: space-between; align-items: center">
+<img src="./assets/5467187b511ca186af8fd6808b0917e8.png" alt="Williams Racing Cars Wash" style="height: 56px; width: auto; display: block">
+<a class="nl m" href="#top" style="display: flex; align-items: center; gap: 10px; min-height: 44px">Salta l'intro<svg width="12" height="12" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M7 1v12M2 8l5 5 5-5"></path></svg></a>
+</div>
+<div class="m" style="position: absolute; left: 56px; bottom: 44px; color: #85817b"><span data-intro-count="1" style="color: #efebe4">001</span> / 170</div>
+<div data-intro-cue="1" class="intro-ui" style="position: absolute; left: 50%; bottom: 36px; transform: translateX(-50%); display: flex; flex-direction: column; align-items: center; gap: 14px">
+<span class="m" style="color: #c9c5be">Scorri per entrare</span>
+<span style="position: relative; width: 1px; height: 36px; background: rgba(239,235,228,.18); overflow: hidden"><span class="cue" style="position: absolute; inset: 0; background: #efebe4"></span></span>
+</div>
+<div aria-hidden="true" style="position: absolute; right: 56px; bottom: 50px; width: 200px; height: 1px; background: rgba(239,235,228,.18)"><div data-intro-bar="1" style="height: 1px; background: {{accent}}; transform: scaleX(0); transform-origin: left"></div></div>
+<span data-intro-load="1" class="m intro-ui" style="position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); color: #85817b">Caricamento 0%</span>
+</div>
+</section>
+
+<!-- NAVBAR -->
+<header class="nav" data-nav="1" style="position: sticky; top: 0; z-index: 50; height: 88px; box-sizing: border-box; padding: 0 56px; display: flex; align-items: center; justify-content: space-between">
+<a href="#top" aria-label="Williams Racing Cars Wash — torna all'inizio" style="display: flex; align-items: center; gap: 14px">
+<img src="./assets/5467187b511ca186af8fd6808b0917e8.png" alt="Williams Racing Cars Wash" style="height: 56px; width: auto; display: block">
+</a>
+<nav aria-label="Menu principale" style="display: flex; gap: 40px">
+<a class="nl m" href="#servizi">Servizi</a>
+<a class="nl m" href="#listino">Listino</a>
+<a class="nl m" href="#detailing">Detailing</a>
+<a class="nl m" href="#risultati">Risultati</a>
+<a class="nl m" href="#chi-siamo">Chi siamo</a>
+<a class="nl m" href="#faq">FAQ</a>
+<a class="nl m" href="#contatti">Contatti</a>
+</nav>
+<a class="btn" data-magnetic="1" data-cursor="CONTATTA" href="#prenota" style="height: 46px; padding: 0 22px">Prenota
+<svg width="12" height="12" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M1 7h12M8 2l5 5-5 5"></path></svg>
+</a>
+</header>
+
+<!-- HERO -->
+<section id="top" aria-label="Introduzione" style="position: relative; height: 900px; margin-top: -88px; overflow: hidden">
+<div class="ph heroimg" data-cursor="VEDI" style="position: absolute; left: 640px; right: 96px; top: 120px; height: 700px">
+<img src="./assets/7b7f216ec082bde65d2bc4c997891676.jpg" alt="Mercedes-Benz CLA grigio opaco curata da Williams Racing Cars Wash" data-px="0.22" style="position: absolute; left: 0; top: -8%; width: 100%; height: 116%; object-fit: cover; object-position: 50% 60%; filter: brightness(.82) contrast(1.06) saturate(.85)">
+<div aria-hidden="true" style="position: absolute; inset: 0; background: linear-gradient(90deg, rgba(11,11,12,.75) 0%, rgba(11,11,12,0) 45%)"></div>
+<div class="ph-frame"></div>
+</div>
+<div aria-hidden="true" style="position: absolute; inset: 0; background: linear-gradient(180deg, rgba(11,11,12,.6) 0%, rgba(11,11,12,0) 22%, rgba(11,11,12,0) 60%, rgba(11,11,12,.9) 100%); pointer-events: none"></div>
+
+<div style="position: absolute; left: 96px; top: 168px; display: flex; flex-direction: column; gap: 36px">
+<div class="m fade" style="color: #a39f98; animation-delay: .1s; display: flex; align-items: center; gap: 14px">
+<span style="width: 8px; height: 8px; border-radius: 50%; background: {{accent}}"></span>Williams Racing Cars Wash / Automotive detailing
+</div>
+<h1 style="margin: 0; display: flex; flex-direction: column">
+<span class="hl d" style="font-size: 124px"><span style="animation-delay: .25s">La tua auto,</span></span>
+<span class="hl s" style="font-size: 148px; line-height: 0.95; margin-left: 180px; color: #efebe4"><span style="animation-delay: .42s">portata al massimo.</span></span>
+</h1>
+</div>
+
+<div style="position: absolute; left: 96px; right: 96px; top: 626px; display: flex; justify-content: space-between; align-items: flex-end">
+<div style="display: flex; flex-direction: column; gap: 32px">
+<p class="fade" style="margin: 0; font-size: 19px; line-height: 1.55; color: #c9c5be; max-width: 440px; animation-delay: .8s">Detailing, cura e perfezione automobilistica nel cuore di [CITTÀ].</p>
+<div class="fade" style="display: flex; gap: 14px; animation-delay: 1s">
+<a class="btn" data-magnetic="1" data-cursor="CONTATTA" href="#prenota">Prenota il tuo servizio
+<svg width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M1 7h12M8 2l5 5-5 5"></path></svg>
+</a>
+<a class="btn-o" data-magnetic="1" data-cursor="SCOPRI" href="#servizi">Scopri i servizi</a>
+</div>
+</div>
+
+</div>
+
+<div style="position: absolute; left: 96px; right: 96px; bottom: 0; height: 64px; border-top: 1px solid rgba(239,235,228,.12); display: flex; align-items: center; justify-content: space-between">
+<div class="m" style="display: flex; gap: 72px; color: #a39f98">
+<span><span style="color: {{accent}}">01</span> / Detailing</span>
+<span><span style="color: {{accent}}">02</span> / Cura</span>
+<span><span style="color: {{accent}}">03</span> / Protezione</span>
+</div>
+<div class="m" style="display: flex; align-items: center; gap: 16px; color: #85817b">Scorri
+<span style="position: relative; width: 1px; height: 28px; background: rgba(239,235,228,.14); overflow: hidden"><span class="cue" style="position: absolute; inset: 0; background: #efebe4"></span></span>
+</div>
+</div>
+</section>
+
+<!-- INTRO -->
+<section aria-label="Manifesto" data-intro="1" style="height: 760px; box-sizing: border-box; padding: 150px 96px 0; position: relative">
+<div style="display: flex; justify-content: space-between; margin-bottom: 64px">
+<span class="m" style="color: #85817b">01 — Manifesto</span>
+<span class="m" style="color: #85817b">Williams Racing Cars Wash · [CITTÀ]</span>
+</div>
+<p class="d" style="margin: 0; font-size: 78px; line-height: 0.98; max-width: 1248px">
+<span class="w" data-word="1">Non </span><span class="w" data-word="1">è </span><span class="w" data-word="1">solo </span><span class="w" data-word="1">pulire </span><span class="w" data-word="1">un'auto. </span><span class="w s" data-word="1" style="font-size: 88px; color: {{accent}}">È riportare alla luce </span><span class="w" data-word="1">ciò </span><span class="w" data-word="1">che </span><span class="w" data-word="1">la </span><span class="w" data-word="1">rende </span><span class="w" data-word="1">speciale.</span>
+</p>
+<div style="position: absolute; left: 736px; right: 96px; bottom: 96px; display: flex; gap: 40px; align-items: flex-start">
+<span data-rv="line" style="flex: none; width: 96px; height: 1px; background: #85817b; margin-top: 12px"></span>
+<p data-rv="1" data-d="1" style="margin: 0; font-size: 17px; line-height: 1.65; color: #a39f98">Ci occupiamo di cura, estetica e protezione automobilistica con un approccio meticoloso, pensato per chi pretende qualcosa in più dalla propria vettura.</p>
+</div>
+</section>
+
+<!-- SERVIZI -->
+<section id="servizi" aria-label="Servizi" style="height: 1120px; box-sizing: border-box; padding: 120px 96px 0; border-top: 1px solid #1c1c1f">
+<div style="display: flex; justify-content: space-between; align-items: flex-end; margin-bottom: 64px">
+<div style="display: flex; flex-direction: column; gap: 28px">
+<span class="m" style="color: #85817b">02 — Servizi</span>
+<h2 class="d" data-rv="clip" style="margin: 0; font-size: 80px">Dieci modi<br><span class="s" style="font-size: 92px; color: #efebe4">di prendersene cura.</span></h2>
+</div>
+<p data-rv="1" data-d="1" style="margin: 0; max-width: 360px; font-size: 16px; line-height: 1.65; color: #a39f98">Ogni trattamento parte da un'analisi del veicolo. Nessun pacchetto preconfezionato: solo ciò che serve davvero alla tua auto.</p>
+</div>
+<div style="display: flex; gap: 72px">
+<div style="flex-grow: 1; display: flex; flex-direction: column; border-bottom: 1px solid #232326">
+<sc-for list="{{services}}" as="sv" hint-placeholder-count="10">
+<button class="srow" type="button" data-cursor="SCOPRI" onMouseEnter="{{sv.pick}}" onFocus="{{sv.pick}}" onClick="{{sv.pick}}" aria-pressed="{{sv.isActive}}">
+<span class="m" style="width: 36px; color: {{sv.numColor}}">{{sv.num}}</span>
+<span class="d" style="flex-grow: 1; font-size: 28px; letter-spacing: -0.01em; color: {{sv.titleColor}}; transform: translateX({{sv.shift}}px)">{{sv.title}}</span>
+<span style="color: {{sv.titleColor}}; transform: translateX({{sv.arrow}}px)"><svg width="16" height="16" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.3" aria-hidden="true"><path d="M1 7h12M8 2l5 5-5 5"></path></svg></span>
+</button>
+</sc-for>
+</div>
+<aside aria-live="polite" style="width: 500px; flex: none; display: flex; flex-direction: column; gap: 28px">
+<div class="ph" data-cursor="VEDI" style="height: 420px">
+<img src="./assets/7b7f216ec082bde65d2bc4c997891676.jpg" alt="Esterni auto" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: 50% 55%; opacity: {{cur.oA}}; transition: opacity 1s cubic-bezier(.19,1,.22,1); filter: brightness(.85)">
+<img src="./assets/8a59c56b1a44b9a64493fa989b42e048.jpg" alt="Interni auto" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; opacity: {{cur.oB}}; transition: opacity 1s cubic-bezier(.19,1,.22,1); filter: brightness(.85)">
+<img src="./assets/b3c647f7048199058e0c2dbdf04bd701.jpg" alt="Dettaglio cerchio" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; opacity: {{cur.oC}}; transition: opacity 1s cubic-bezier(.19,1,.22,1); filter: brightness(.85)">
+<div aria-hidden="true" style="position: absolute; inset: 0; background: linear-gradient(180deg, rgba(11,11,12,0) 50%, rgba(11,11,12,.7) 100%)"></div>
+<span class="s" style="position: absolute; right: 28px; bottom: 4px; font-size: 140px; line-height: 1; color: rgba(239,235,228,.85)">{{cur.num}}</span>
+<div class="ph-frame"></div>
+</div>
+<div style="display: flex; justify-content: space-between; align-items: baseline">
+<span class="d" style="font-size: 34px">{{cur.title}}</span>
+<span class="m" style="color: {{accent}}">{{cur.num}} / 10</span>
+</div>
+<p style="margin: 0; font-size: 16px; line-height: 1.65; color: #a39f98; min-height: 80px">{{cur.desc}}</p>
+<div style="display: flex; justify-content: space-between; align-items: center; border-top: 1px solid #232326; padding-top: 22px">
+<span class="m" style="color: #85817b">Tempo indicativo — [DURATA]</span>
+<a class="lnk m" href="#prenota" data-cursor="CONTATTA">Richiedi<svg width="12" height="12" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M1 7h12M8 2l5 5-5 5"></path></svg></a>
+</div>
+</aside>
+</div>
+</section>
+
+<!-- LISTINO -->
+<section id="listino" aria-label="Listino prezzi" style="height: 1000px; box-sizing: border-box; padding: 120px 96px 0; border-top: 1px solid #1c1c1f">
+<div style="display: flex; justify-content: space-between; align-items: flex-end; margin-bottom: 64px">
+<div style="display: flex; flex-direction: column; gap: 28px">
+<span class="m" style="color: #85817b">02.1 — Listino</span>
+<h2 class="d" data-rv="clip" style="margin: 0; font-size: 80px">Premium <span class="s" style="font-size: 92px; color: {{accent}}">detailing.</span></h2>
+</div>
+<p data-rv="1" data-d="1" style="margin: 0; max-width: 360px; font-size: 16px; line-height: 1.65; color: #a39f98">Tre formati, gli stessi standard. Scegli in base alle dimensioni della tua auto.</p>
+</div>
+<div style="display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 24px">
+<sc-for list="{{prices}}" as="pr" hint-placeholder-count="3">
+<div data-rv="1" style="border: 1px solid #232326; padding: 36px; display: flex; flex-direction: column; gap: 28px; background: #0f0f10">
+<div style="display: flex; justify-content: space-between; align-items: baseline">
+<span class="d" style="font-size: 36px">{{pr.size}}</span>
+<span class="m" style="color: {{accent}}">{{pr.num}}</span>
+</div>
+<div style="display: flex; flex-direction: column">
+<sc-for list="{{pr.rows}}" as="rw" hint-placeholder-count="3">
+<div style="display: flex; justify-content: space-between; align-items: baseline; padding: 16px 0; border-top: 1px solid #232326">
+<span style="font-size: 15px; color: #c9c5be">{{rw.label}}</span>
+<span class="d" style="font-size: 22px; letter-spacing: 0">{{rw.price}}</span>
+</div>
+</sc-for>
+</div>
+<div style="display: flex; justify-content: space-between; align-items: flex-end; border-top: 1px solid #efebe4; padding-top: 22px">
+<span class="m" style="color: #a39f98">Pacchetto<br>completo</span>
+<span class="d" style="font-size: 72px">{{pr.total}}</span>
+</div>
+<a class="btn-o" href="https://wa.me/34674440773" data-cursor="CONTATTA" style="justify-content: space-between">Prenota<svg width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M1 7h12M8 2l5 5-5 5"></path></svg></a>
+</div>
+</sc-for>
+</div>
+<div data-rv="1" style="display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); margin-top: 40px; border-top: 1px solid #232326; border-bottom: 1px solid #232326">
+<div style="padding: 24px 24px 24px 0; display: flex; flex-direction: column; gap: 8px"><span class="d" style="font-size: 17px; letter-spacing: 0">Prodotti premium</span><span class="m" style="color: #85817b">Massima qualità</span></div>
+<div style="padding: 24px; border-left: 1px solid #232326; display: flex; flex-direction: column; gap: 8px"><span class="d" style="font-size: 17px; letter-spacing: 0">Finitura perfetta</span><span class="m" style="color: #85817b">Brillantezza e protezione</span></div>
+<div style="padding: 24px; border-left: 1px solid #232326; display: flex; flex-direction: column; gap: 8px"><span class="d" style="font-size: 17px; letter-spacing: 0">Attenzione esclusiva</span><span class="m" style="color: #85817b">Clienti VIP</span></div>
+<div style="padding: 24px; border-left: 1px solid #232326; display: flex; flex-direction: column; gap: 8px"><span class="d" style="font-size: 17px; letter-spacing: 0">Ritiro e consegna</span><span class="m" style="color: {{accent}}">A domicilio</span></div>
+</div>
+</section>
+
+<!-- DETAILING -->
+<section id="detailing" aria-label="Detailing" style="height: 1040px; box-sizing: border-box; padding: 120px 96px 0; position: relative">
+<div style="display: flex; gap: 96px">
+<div style="position: relative; width: 700px; flex: none; height: 800px">
+<div class="ph" data-rv="clip" data-cursor="VEDI" style="position: absolute; left: 0; top: 0; width: 620px; height: 800px">
+<img src="./assets/8a59c56b1a44b9a64493fa989b42e048.jpg" alt="Abitacolo Mercedes-Benz dopo la pulizia degli interni" data-px="0.3" style="position: absolute; left: 0; top: -8%; width: 100%; height: 116%; object-fit: cover; object-position: 45% 50%">
+<div class="ph-frame"></div>
+</div>
+<div class="ph" data-rv="right" data-d="2" data-cursor="VEDI" style="position: absolute; right: 0; bottom: -40px; width: 250px; height: 320px; border: 8px solid #0b0b0c">
+<img src="./assets/b3c647f7048199058e0c2dbdf04bd701.jpg" alt="Cerchio in lega AMG pulito" data-px="-0.2" style="position: absolute; left: 0; top: -8%; width: 100%; height: 116%; object-fit: cover">
+</div>
+<span class="m" style="position: absolute; left: 0; bottom: -44px; color: #85817b">Fig. 03 — Abitacolo e cerchi</span>
+</div>
+<div style="flex-grow: 1; display: flex; flex-direction: column; gap: 36px; padding-top: 40px">
+<span class="m" style="color: #85817b">03 — Detailing</span>
+<h2 class="d" data-rv="clip" style="margin: 0; font-size: 72px">Il dettaglio<br>fa la<br><span class="s" style="font-size: 88px; color: {{accent}}">differenza.</span></h2>
+<p data-rv="1" data-d="1" style="margin: 0; font-size: 17px; line-height: 1.65; color: #a39f98; max-width: 440px">Un'auto è fatta di superfici diverse, e ognuna chiede un trattamento diverso. Per questo lavoriamo per zone, con strumenti, prodotti e tempi dedicati.</p>
+<div data-rv="1" data-d="2" class="m" style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); column-gap: 32px; color: #c9c5be">
+<span style="border-top: 1px solid #232326; padding: 14px 0">Vernice</span><span style="border-top: 1px solid #232326; padding: 14px 0">Cerchi</span>
+<span style="border-top: 1px solid #232326; padding: 14px 0">Pneumatici</span><span style="border-top: 1px solid #232326; padding: 14px 0">Interni</span>
+<span style="border-top: 1px solid #232326; padding: 14px 0">Pelle</span><span style="border-top: 1px solid #232326; padding: 14px 0">Cruscotto</span>
+<span style="border-top: 1px solid #232326; border-bottom: 1px solid #232326; padding: 14px 0">Fari</span><span style="border-top: 1px solid #232326; border-bottom: 1px solid #232326; padding: 14px 0">Carrozzeria</span>
+</div>
+<div style="display: flex; gap: 28px; margin-top: 12px">
+<div data-rv="1" data-d="1" style="flex: 1; display: flex; flex-direction: column; gap: 10px"><span class="m" style="color: {{accent}}">01 / Preparazione</span><span style="font-size: 14px; line-height: 1.55; color: #a39f98">Lavaggio, decontaminazione e ispezione.</span></div>
+<div data-rv="1" data-d="2" style="flex: 1; display: flex; flex-direction: column; gap: 10px"><span class="m" style="color: {{accent}}">02 / Correzione</span><span style="font-size: 14px; line-height: 1.55; color: #a39f98">Lucidatura mirata dei difetti.</span></div>
+<div data-rv="1" data-d="3" style="flex: 1; display: flex; flex-direction: column; gap: 10px"><span class="m" style="color: {{accent}}">03 / Protezione</span><span style="font-size: 14px; line-height: 1.55; color: #a39f98">Sigillare il risultato nel tempo.</span></div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- PRIMA / DOPO -->
+<section id="risultati" aria-label="Prima e dopo" style="height: 1040px; box-sizing: border-box; padding: 120px 96px 0; border-top: 1px solid #1c1c1f; display: flex; gap: 96px">
+<div style="flex-grow: 1; display: flex; flex-direction: column; gap: 32px">
+<span class="m" style="color: #85817b">04 — Risultati</span>
+<h2 class="d" data-rv="clip" style="margin: 0; font-size: 80px">Vedi la<br><span class="s" style="font-size: 96px; color: {{accent}}">differenza.</span></h2>
+<p data-rv="1" data-d="1" style="margin: 0; max-width: 440px; font-size: 17px; line-height: 1.65; color: #a39f98">Ogni trattamento nasce da un'analisi precisa e termina con un risultato visibile.</p>
+<div data-rv="1" data-d="2" style="margin-top: auto; margin-bottom: 80px; display: flex; flex-direction: column; border-top: 1px solid #232326">
+<div style="display: flex; justify-content: space-between; padding: 18px 0; border-bottom: 1px solid #232326"><span class="m" style="color: #85817b">Veicolo</span><span style="font-size: 15px">Mercedes-Benz GLE</span></div>
+<div style="display: flex; justify-content: space-between; padding: 18px 0; border-bottom: 1px solid #232326"><span class="m" style="color: #85817b">Trattamento</span><span style="font-size: 15px">[NOME DEL TRATTAMENTO]</span></div>
+<div style="display: flex; justify-content: space-between; padding: 18px 0; border-bottom: 1px solid #232326"><span class="m" style="color: #85817b">Come si usa</span><span class="m" style="color: #c9c5be">Trascina la linea ←→</span></div>
+</div>
+</div>
+<div data-rv="clip" style="flex: none">
+<div style="position: relative; width: 600px; height: 786px; overflow: hidden; user-select: none; flex: none">
+<img src="./assets/2c88e72d3d18ada8106dc35b4dd64d16.jpg" alt="Prima: Mercedes-Benz GLE bianca coperta di fango" draggable="false" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover">
+<img src="./assets/7ac79c7646c22ac8b490b20bcc2c066c.jpg" alt="Dopo: la stessa Mercedes-Benz GLE pulita e lucidata" draggable="false" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; clip-path: inset(0 0 0 {{pos}}%)">
+<span class="m" style="position: absolute; left: 24px; top: 24px; z-index: 3; background: rgba(11,11,12,.7); padding: 7px 10px; color: #efebe4">Prima</span>
+<span class="m" style="position: absolute; right: 24px; top: 24px; z-index: 3; background: #efebe4; padding: 7px 10px; color: #0b0b0c; font-weight: 500">Dopo</span>
+<div aria-hidden="true" style="position: absolute; top: 0; bottom: 0; left: {{pos}}%; width: 1px; background: #efebe4; z-index: 4">
+<div style="position: absolute; top: 50%; left: 0; width: 64px; height: 64px; margin: -32px 0 0 -32px; border-radius: 50%; border: 1px solid #efebe4; background: rgba(11,11,12,.55); backdrop-filter: blur(8px); -webkit-backdrop-filter: blur(8px); display: flex; align-items: center; justify-content: center; gap: 8px">
+<svg width="9" height="12" viewBox="0 0 9 12" fill="none" stroke="#efebe4" stroke-width="1.3"><path d="M7 1L2 6l5 5"></path></svg>
+<svg width="9" height="12" viewBox="0 0 9 12" fill="none" stroke="#efebe4" stroke-width="1.3"><path d="M2 1l5 5-5 5"></path></svg>
+</div>
+</div>
+<input class="rng" type="range" min="0" max="100" step="0.5" value="{{pos}}" onChange="{{slide}}" onInput="{{slide}}" aria-label="Trascina per confrontare prima e dopo il trattamento">
+</div>
+</div>
+</section>
+
+<!-- GALLERY -->
+<section aria-label="Galleria lavori" style="height: 1280px; box-sizing: border-box; padding: 120px 96px 0">
+<div style="display: flex; justify-content: space-between; align-items: flex-end; margin-bottom: 56px">
+<div style="display: flex; flex-direction: column; gap: 28px">
+<span class="m" style="color: #85817b">05 — Galleria</span>
+<h2 class="d" data-rv="clip" style="margin: 0; font-size: 64px">Appunti<br><span class="s" style="font-size: 76px">dal nostro garage.</span></h2>
+</div>
+<a class="lnk m" href="https://www.instagram.com/williamsracingcarswash/" data-cursor="VEDI">Vedi tutti i lavori<svg width="12" height="12" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M1 7h12M8 2l5 5-5 5"></path></svg></a>
+</div>
+<div style="display: grid; grid-template-columns: repeat(12, minmax(0, 1fr)); grid-auto-rows: 120px; gap: 16px">
+<a class="tile ph" href="https://www.instagram.com/williamsracingcarswash/" data-rv="clip" data-cursor="VEDI" aria-label="Mercedes-Benz CLA grigio opaco — apri Instagram" style="grid-column: 1 / 7; grid-row: 1 / 6">
+<img class="ph-in" src="./assets/7b7f216ec082bde65d2bc4c997891676.jpg" alt="Mercedes-Benz CLA grigio opaco" style="inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: 50% 60%">
+<div class="ov"><span class="m" style="color: #efebe4">Risultato</span><span class="s" style="font-size: 28px">01</span></div>
+</a>
+<a class="tile ph" href="https://www.instagram.com/williamsracingcarswash/" data-rv="clip" data-d="1" data-cursor="VEDI" aria-label="Interni in pelle dopo il trattamento — apri Instagram" style="grid-column: 7 / 13; grid-row: 1 / 5">
+<img class="ph-in" src="./assets/8a59c56b1a44b9a64493fa989b42e048.jpg" alt="Interni in pelle dopo il trattamento" style="inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: 50% 55%">
+<div class="ov"><span class="m" style="color: #efebe4">Interni</span><span class="s" style="font-size: 28px">02</span></div>
+</a>
+<a class="tile ph" href="https://www.instagram.com/williamsracingcarswash/" data-rv="clip" data-d="2" data-cursor="VEDI" aria-label="Cerchio AMG e pneumatico trattati — apri Instagram" style="grid-column: 7 / 13; grid-row: 5 / 8">
+<img class="ph-in" src="./assets/b3c647f7048199058e0c2dbdf04bd701.jpg" alt="Cerchio AMG e pneumatico trattati" style="inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: 50% 50%">
+<div class="ov"><span class="m" style="color: #efebe4">Dettaglio</span><span class="s" style="font-size: 28px">03</span></div>
+</a>
+<a href="https://www.instagram.com/williamsracingcarswash/" data-rv="1" data-d="1" data-cursor="VEDI" style="grid-column: 1 / 7; grid-row: 6 / 8; border: 1px solid #232326; padding: 32px; display: flex; flex-direction: column; justify-content: space-between">
+<span class="m" style="color: #85817b">Instagram</span>
+<span style="display: flex; justify-content: space-between; align-items: flex-end">
+<span class="d" style="font-size: 30px; letter-spacing: -0.01em">@williamsracing<br>carswash</span>
+<span style="color: {{accent}}"><svg width="28" height="28" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.1" aria-hidden="true"><path d="M1 7h12M8 2l5 5-5 5"></path></svg></span>
+</span>
+</a>
+</div>
+</section>
+
+<!-- NUMERI -->
+<section aria-label="In numeri" data-countsec="1" style="height: 520px; box-sizing: border-box; padding: 110px 96px 0; border-top: 1px solid #1c1c1f">
+<span class="m" style="color: #85817b">06 — In numeri</span>
+<div style="display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); margin-top: 64px">
+<div data-rv="1" style="border-left: 1px solid #232326; padding: 0 32px; display: flex; flex-direction: column; gap: 24px">
+<span class="d" style="font-size: 96px"><span style="color: {{accent}}">+</span>[N]</span>
+<span class="m" style="color: #a39f98">Auto trattate</span>
+</div>
+<div data-rv="1" data-d="1" style="border-left: 1px solid #232326; padding: 0 32px; display: flex; flex-direction: column; gap: 24px">
+<span class="d" style="font-size: 96px"><span style="color: {{accent}}">+</span>[N]</span>
+<span class="m" style="color: #a39f98">Anni di esperienza</span>
+</div>
+<div data-rv="1" data-d="2" style="border-left: 1px solid #232326; padding: 0 32px; display: flex; flex-direction: column; gap: 24px">
+<span class="d" style="font-size: 96px">{{n}}<span style="color: {{accent}}">%</span></span>
+<span class="m" style="color: #a39f98">Attenzione al dettaglio</span>
+</div>
+<div data-rv="1" data-d="3" style="border-left: 1px solid #232326; border-right: 1px solid #232326; padding: 0 32px; display: flex; flex-direction: column; gap: 24px">
+<span class="d" style="font-size: 96px">[N]</span>
+<span class="m" style="color: #a39f98">Clienti</span>
+</div>
+</div>
+</section>
+
+<!-- PERCHÉ SCEGLIERCI -->
+<section id="chi-siamo" aria-label="Perché sceglierci" style="height: 900px; box-sizing: border-box; padding: 120px 96px 0; display: flex; gap: 96px">
+<div style="width: 420px; flex: none; display: flex; flex-direction: column; gap: 28px">
+<span class="m" style="color: #85817b">07 — Chi siamo</span>
+<h2 class="d" data-rv="clip" style="margin: 0; font-size: 60px">Cinque ragioni.<br><span class="s" style="font-size: 72px; color: {{accent}}">Nessuno slogan.</span></h2>
+<p data-rv="1" data-d="1" style="margin: 0; font-size: 16px; line-height: 1.65; color: #a39f98">[BREVE PRESENTAZIONE DELL'AZIENDA: storia, persone, filosofia di lavoro.]</p>
+<figure class="ph" data-rv="clip" data-d="2" data-cursor="VEDI" style="margin: 0; width: 420px; height: 380px">
+<img src="./assets/4cfa277f52cd2d28ce4ad49b1a5b3a49.jpg" alt="Il team di Williams Racing Cars Wash tra le auto" data-px="0.15" style="position: absolute; left: 0; top: -8%; width: 100%; height: 116%; object-fit: cover; object-position: 50% 35%">
+<figcaption class="m" style="position: absolute; left: 20px; bottom: 18px; color: #efebe4">Williams Racing Cars Wash</figcaption>
+</figure>
+</div>
+<div style="flex-grow: 1; display: flex; flex-direction: column; border-bottom: 1px solid #232326">
+<sc-for list="{{reasons}}" as="r" hint-placeholder-count="5">
+<div data-rv="1" style="display: flex; align-items: center; gap: 40px; height: 128px; border-top: 1px solid #232326">
+<span class="s" style="width: 80px; font-size: 56px; color: #85817b">{{r.num}}</span>
+<span class="d" style="width: 300px; font-size: 32px; letter-spacing: -0.01em">{{r.title}}</span>
+<span style="flex-grow: 1; font-size: 15px; line-height: 1.6; color: #a39f98">{{r.desc}}</span>
+</div>
+</sc-for>
+</div>
+</section>
+
+<!-- PROCESSO -->
+<section aria-label="Come lavoriamo" data-tlsec="1" style="height: 700px; box-sizing: border-box; padding: 120px 96px 0; border-top: 1px solid #1c1c1f">
+<div style="display: flex; justify-content: space-between; align-items: flex-end; margin-bottom: 96px">
+<div style="display: flex; flex-direction: column; gap: 28px">
+<span class="m" style="color: #85817b">08 — Metodo</span>
+<h2 class="d" data-rv="clip" style="margin: 0; font-size: 72px">Come <span class="s" style="font-size: 84px">lavoriamo.</span></h2>
+</div>
+<span class="m" style="color: #85817b">Cinque fasi · un solo standard</span>
+</div>
+<div style="position: relative">
+<div style="position: absolute; left: 0; right: 0; top: 6px; height: 1px; background: #2a2a2d"></div>
+<div data-tl="1" style="position: absolute; left: 0; right: 0; top: 6px; height: 1px; background: {{accent}}; transform: scaleX(0); transform-origin: left; will-change: transform"></div>
+<div style="display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 32px; position: relative">
+<sc-for list="{{steps}}" as="st" hint-placeholder-count="5">
+<div data-rv="1" style="display: flex; flex-direction: column; gap: 22px">
+<span style="width: 13px; height: 13px; border-radius: 50%; background: #0b0b0c; border: 1px solid #efebe4"></span>
+<span class="m" style="color: {{accent}}">{{st.num}}</span>
+<span class="d" style="font-size: 22px; letter-spacing: 0">{{st.title}}</span>
+<span style="font-size: 14px; line-height: 1.6; color: #a39f98">{{st.desc}}</span>
+</div>
+</sc-for>
+</div>
+</div>
+</section>
+
+<!-- RECENSIONI -->
+<section aria-label="Recensioni" style="height: 680px; box-sizing: border-box; padding: 120px 96px 0">
+<div style="display: flex; flex-direction: column; gap: 28px; margin-bottom: 72px">
+<span class="m" style="color: #85817b">09 — Recensioni</span>
+<h2 class="d" data-rv="clip" style="margin: 0; font-size: 56px">La fiducia si vede<br><span class="s" style="font-size: 66px">anche nei dettagli.</span></h2>
+</div>
+<div style="display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 48px">
+<figure data-rv="1" style="margin: 0; display: flex; flex-direction: column; gap: 28px; border-top: 1px solid #232326; padding-top: 32px">
+<blockquote class="s" style="margin: 0; font-size: 26px; line-height: 1.3; color: #c9c5be">“[RECENSIONE REALE DEL CLIENTE]”</blockquote>
+<figcaption class="m" style="display: flex; justify-content: space-between; color: #85817b"><span>[NOME CLIENTE]</span><span>[VALUTAZIONE] / 5</span></figcaption>
+</figure>
+<figure data-rv="1" data-d="1" style="margin: 0; display: flex; flex-direction: column; gap: 28px; border-top: 1px solid #232326; padding-top: 32px">
+<blockquote class="s" style="margin: 0; font-size: 26px; line-height: 1.3; color: #c9c5be">“[RECENSIONE REALE DEL CLIENTE]”</blockquote>
+<figcaption class="m" style="display: flex; justify-content: space-between; color: #85817b"><span>[NOME CLIENTE]</span><span>[VALUTAZIONE] / 5</span></figcaption>
+</figure>
+<figure data-rv="1" data-d="2" style="margin: 0; display: flex; flex-direction: column; gap: 28px; border-top: 1px solid #232326; padding-top: 32px">
+<blockquote class="s" style="margin: 0; font-size: 26px; line-height: 1.3; color: #c9c5be">“[RECENSIONE REALE DEL CLIENTE]”</blockquote>
+<figcaption class="m" style="display: flex; justify-content: space-between; color: #85817b"><span>[NOME CLIENTE]</span><span>[VALUTAZIONE] / 5</span></figcaption>
+</figure>
+</div>
+</section>
+
+<!-- FAQ -->
+<section id="faq" aria-label="Domande frequenti" style="height: 1060px; box-sizing: border-box; padding: 120px 96px 0; border-top: 1px solid #1c1c1f; display: flex; gap: 96px">
+<div style="width: 390px; flex: none; display: flex; flex-direction: column; gap: 28px">
+<span class="m" style="color: #85817b">10 — FAQ</span>
+<h2 class="d" data-rv="clip" style="margin: 0; font-size: 64px">Domande<br><span class="s" style="font-size: 76px">frequenti.</span></h2>
+<p data-rv="1" data-d="1" style="margin: 0; font-size: 16px; line-height: 1.65; color: #a39f98">Non trovi la risposta che cerchi? Scrivici: rispondiamo a ogni domanda.</p>
+<a class="lnk m" href="https://wa.me/34674440773" data-cursor="CONTATTA" style="align-self: flex-start">Scrivici su WhatsApp<svg width="12" height="12" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M1 7h12M8 2l5 5-5 5"></path></svg></a>
+</div>
+<div style="flex-grow: 1; border-bottom: 1px solid #232326">
+<sc-for list="{{faqs}}" as="f" hint-placeholder-count="8">
+<div style="border-top: 1px solid #232326">
+<button class="fq" type="button" onClick="{{f.toggle}}" aria-expanded="{{f.isOpen}}" style="display: flex; align-items: center; gap: 32px; height: 84px">
+<span class="m" style="width: 28px; color: {{f.numColor}}">{{f.num}}</span>
+<span style="flex-grow: 1; font-size: 21px; font-weight: 500; letter-spacing: -0.01em">{{f.q}}</span>
+<span aria-hidden="true" style="position: relative; width: 16px; height: 16px">
+<span style="position: absolute; left: 0; top: 7.5px; width: 16px; height: 1px; background: #efebe4"></span>
+<span style="position: absolute; left: 7.5px; top: 0; width: 1px; height: 16px; background: #efebe4; transform: rotate({{f.rot}}deg); transition: transform .6s cubic-bezier(.19,1,.22,1)"></span>
+</span>
+</button>
+<sc-if value="{{f.isOpen}}" hint-placeholder-val="{{false}}">
+<p class="fade" style="margin: 0; padding: 0 60px 32px 60px; font-size: 16px; line-height: 1.7; color: #a39f98; animation-duration: 1s">{{f.a}}</p>
+</sc-if>
+</div>
+</sc-for>
+</div>
+</section>
+
+<!-- CTA FINALE -->
+<section id="prenota" aria-label="Prenota" style="position: relative; height: 860px; overflow: hidden">
+<div class="ph" style="position: absolute; left: 640px; right: 0; top: 0; bottom: 0">
+<img src="./assets/7b7f216ec082bde65d2bc4c997891676.jpg" alt="Mercedes-Benz CLA grigio opaco" data-px="0.3" style="position: absolute; left: 0; top: -8%; width: 100%; height: 116%; object-fit: cover; object-position: 40% 55%; filter: brightness(.7) saturate(.8)">
+</div>
+<div aria-hidden="true" style="position: absolute; inset: 0; background: linear-gradient(90deg, rgba(11,11,12,1) 0%, rgba(11,11,12,.95) 44%, rgba(11,11,12,.25) 75%, rgba(11,11,12,.1) 100%)"></div>
+<div style="position: absolute; left: 96px; top: 150px; display: flex; flex-direction: column; gap: 40px">
+<span class="m" style="color: #a39f98">11 — Prenota</span>
+<h2 class="d" data-rv="clip" style="margin: 0; font-size: 96px">Pronto a vedere<br>la tua auto<br><span class="s" style="font-size: 112px; color: {{accent}}">in un altro modo?</span></h2>
+<p data-rv="1" data-d="1" style="margin: 0; font-size: 19px; line-height: 1.55; color: #c9c5be">Prenota il tuo prossimo trattamento presso Williams Racing Cars Wash.</p>
+<div data-rv="1" data-d="2" style="display: flex; gap: 14px">
+<a class="btn" data-magnetic="1" data-cursor="CONTATTA" href="https://wa.me/34674440773">Prenota su WhatsApp
+<svg width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M1 7h12M8 2l5 5-5 5"></path></svg>
+</a>
+<a class="btn-o" data-magnetic="1" data-cursor="CONTATTA" href="https://wa.me/34674440773">Chiedi un preventivo</a>
+</div>
+</div>
+</section>
+
+<!-- CONTATTI -->
+<section id="contatti" aria-label="Contatti" style="height: 800px; box-sizing: border-box; padding: 120px 96px 0; display: flex; gap: 96px">
+<div style="flex-grow: 1; display: flex; flex-direction: column; gap: 48px">
+<div style="display: flex; flex-direction: column; gap: 28px">
+<span class="m" style="color: #85817b">12 — Contatti</span>
+<h2 class="d" data-rv="clip" style="margin: 0; font-size: 56px">Williams Racing Cars Wash</h2>
+</div>
+<dl data-rv="1" data-d="1" style="margin: 0; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); column-gap: 40px; border-bottom: 1px solid #232326">
+<div style="border-top: 1px solid #232326; padding: 22px 0; display: flex; flex-direction: column; gap: 10px"><dt class="m" style="color: #85817b">Indirizzo</dt><dd style="margin: 0; font-size: 17px">[INDIRIZZO], [CITTÀ]</dd></div>
+<div style="border-top: 1px solid #232326; padding: 22px 0; display: flex; flex-direction: column; gap: 10px"><dt class="m" style="color: #85817b">Telefono e WhatsApp</dt><dd style="margin: 0; font-size: 17px"><a href="https://wa.me/34674440773">+34 674 44 07 73</a></dd></div>
+<div style="border-top: 1px solid #232326; padding: 22px 0; display: flex; flex-direction: column; gap: 10px"><dt class="m" style="color: #85817b">Instagram</dt><dd style="margin: 0; font-size: 17px"><a href="https://www.instagram.com/williamsracingcarswash/">@williamsracingcarswash</a></dd></div>
+<div style="border-top: 1px solid #232326; padding: 22px 0; display: flex; flex-direction: column; gap: 10px"><dt class="m" style="color: #85817b">Orari</dt><dd style="margin: 0; font-size: 17px">[ORARI]</dd></div>
+<div style="grid-column: 1 / -1; border-top: 1px solid #232326; padding: 22px 0; display: flex; flex-direction: column; gap: 10px"><dt class="m" style="color: #85817b">Servizio</dt><dd style="margin: 0; font-size: 17px">Ritiro e consegna a domicilio</dd></div>
+<div style="grid-column: 1 / -1; border-top: 1px solid #232326; padding: 22px 0; display: flex; flex-direction: column; gap: 10px"><dt class="m" style="color: #85817b">Email</dt><dd style="margin: 0; font-size: 17px"><a href="mailto:williamsjimenezracing@gmail.com">williamsjimenezracing@gmail.com</a></dd></div>
+</dl>
+</div>
+<div data-rv="clip" style="position: relative; width: 600px; height: 560px; flex: none; background: #121214; overflow: hidden">
+<div aria-hidden="true" style="position: absolute; inset: 0; background-image: linear-gradient(rgba(239,235,228,.05) 1px, transparent 1px), linear-gradient(90deg, rgba(239,235,228,.05) 1px, transparent 1px); background-size: 48px 48px"></div>
+<svg viewBox="0 0 600 560" fill="none" stroke="#efebe4" stroke-opacity=".16" stroke-width="10" aria-hidden="true" style="position: absolute; inset: 0">
+<path d="M-20 380 C120 340 220 360 320 300 C420 240 500 250 640 190"></path>
+<path d="M210 -20 C230 120 260 220 300 300 C330 360 330 460 350 600" stroke-width="6"></path>
+</svg>
+<div style="position: absolute; left: 294px; top: 262px; display: flex; flex-direction: column; align-items: center; gap: 12px; transform: translate(-50%, -100%)">
+<span class="m" style="background: #efebe4; color: #0b0b0c; padding: 8px 12px; font-weight: 500">Williams Racing Cars Wash</span>
+<span style="width: 14px; height: 14px; border-radius: 50%; background: {{accent}}; box-shadow: 0 0 0 10px rgba(226,88,58,.18)"></span>
+</div>
+
+<a class="btn" data-magnetic="1" data-cursor="VEDI" href="https://maps.google.com/" style="position: absolute; left: 28px; bottom: 28px">Come arrivare
+<svg width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M1 7h12M8 2l5 5-5 5"></path></svg>
+</a>
+</div>
+</section>
+
+<!-- FOOTER -->
+<footer style="height: 440px; box-sizing: border-box; padding: 88px 96px 40px; border-top: 1px solid #1c1c1f; display: flex; flex-direction: column; justify-content: space-between">
+<div style="display: flex; justify-content: space-between">
+<div style="display: flex; flex-direction: column; gap: 24px">
+<div style="display: flex; align-items: center; gap: 14px">
+<img src="./assets/5467187b511ca186af8fd6808b0917e8.png" alt="Williams Racing Cars Wash" style="height: 84px; width: auto; display: block">
+</div>
+<p class="s" style="margin: 0; font-size: 34px; color: #c9c5be">Cura automobilistica. Senza compromessi.</p>
+</div>
+<div style="display: flex; gap: 96px">
+<div style="display: flex; flex-direction: column; gap: 16px"><span class="m" style="color: #85817b">Seguici</span><a class="nl" href="https://www.instagram.com/williamsracingcarswash/" style="font-size: 15px">Instagram</a><a class="nl" href="https://wa.me/34674440773" style="font-size: 15px">WhatsApp</a><a class="nl" href="https://maps.google.com/" style="font-size: 15px">Google Maps</a><a class="nl" href="mailto:williamsjimenezracing@gmail.com" style="font-size: 15px">Email</a></div>
+<div style="display: flex; flex-direction: column; gap: 16px"><span class="m" style="color: #85817b">Esplora</span><a class="nl" href="#servizi" style="font-size: 15px">Servizi</a><a class="nl" href="#contatti" style="font-size: 15px">Contatti</a><a class="nl" href="#faq" style="font-size: 15px">FAQ</a></div>
+<div style="display: flex; flex-direction: column; gap: 16px"><span class="m" style="color: #85817b">Legale</span><a class="nl" href="#privacy" style="font-size: 15px">Privacy</a><a class="nl" href="#cookie" style="font-size: 15px">Cookie</a></div>
+</div>
+</div>
+<div style="display: flex; justify-content: space-between; align-items: center; border-top: 1px solid #1c1c1f; padding-top: 28px">
+<span class="m" style="color: #85817b">© [ANNO] Williams Racing Cars Wash. Tutti i diritti riservati.</span>
+<span class="m" style="color: #85817b">P.IVA [PARTITA IVA]</span>
+<a class="nl m" href="#top">Torna su ↑</a>
+</div>
+</footer>
+
+<!-- WHATSAPP FLOTTANTE -->
+<a class="wa btn" data-magnetic="1" data-cursor="CONTATTA" href="https://wa.me/34674440773" aria-label="Scrivici su WhatsApp" style="height: 52px; padding: 0 22px; gap: 12px">
+<svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.3" aria-hidden="true"><path d="M2.5 13.5l.9-2.8A5.8 5.8 0 1 1 5.6 13l-3.1.5z"></path></svg>WhatsApp
+</a>
+</div>
+</sc-if>
+
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"accent":{"editor":"color","default":"#e2583a","options":["#e2583a","#c9a46a","#9fb4c7","#e8e2d6"]},"$preview":{"width":1440,"height":16700}}'>
+class Component extends DCLogic {
+  state = { active: 0, pos: 50, open: 0, cl: '', n: 0, mob: Component.isMobile() };
+
+  static isMobile() {
+    try {
+      var w = document.documentElement.clientWidth || window.innerWidth || 1440;
+      var touchPhone = window.matchMedia && window.matchMedia('(pointer: coarse)').matches && Math.min(screen.width || 9999, screen.height || 9999) < 900;
+      return w < 900 || !!touchPhone;
+    } catch (e) { return false; }
+  }
+
+  componentDidMount() {
+    var self = this;
+    this.onMode = function () {
+      var m = Component.isMobile();
+      if (m !== !!self.state.mob) self.setState({ mob: m }, function () { if (!m) self.initDesktop(); });
+    };
+    window.addEventListener('resize', this.onMode);
+    if (!this.state.mob) this.initDesktop();
+  }
+
+
+  initDesktop() {
+    if (this.deskInit) return;
+    try {
+      var self = this;
+      var root = document.querySelector('[data-site="desk"]');
+      if (!root) return;
+      this.deskInit = true;
+      if (!root) return;
+      var reduce = false; // animazioni sempre attive (richiesto dal cliente)
+      var weak = (navigator.hardwareConcurrency || 8) <= 4;
+      root.classList.add('anim');
+      root.classList.add('intro-on');
+
+      // Adatta la pagina alla larghezza della finestra (niente scroll orizzontale né zoom strani)
+      this.z = 1;
+      var fit = function () {
+        var w = document.documentElement.clientWidth || window.innerWidth || 1440;
+        var z = Math.min(1, w / 1440);
+        self.z = z;
+        root.style.zoom = z < 1 ? String(z) : '';
+        root.style.marginLeft = w > 1440 ? Math.round((w - 1440) / 2) + 'px' : '';
+      };
+      this.onFit = fit;
+      window.addEventListener('resize', fit);
+      fit();
+
+      var els = root.querySelectorAll('[data-rv]');
+      if ('IntersectionObserver' in window && !reduce) {
+        // Gli elementi con clip-path hanno area visibile zero: osserviamo il loro contenitore.
+        var targets = new Map();
+        els.forEach(function (el) {
+          var t = el.getAttribute('data-rv') === 'clip' ? (el.parentElement || el) : el;
+          if (!targets.has(t)) targets.set(t, []);
+          targets.get(t).push(el);
+        });
+        this.io = new IntersectionObserver(function (es) {
+          es.forEach(function (e) {
+            if (e.isIntersecting) {
+              (targets.get(e.target) || []).forEach(function (x) { x.classList.add('in'); });
+              self.io.unobserve(e.target);
+            }
+          });
+        }, { threshold: 0.05, rootMargin: '0px 0px -6% 0px' });
+        targets.forEach(function (_, t) { self.io.observe(t); });
+        var cs = root.querySelector('[data-countsec]');
+        if (cs) {
+          this.io2 = new IntersectionObserver(function (es) {
+            if (es[0].isIntersecting) { self.io2.disconnect(); self.countUp(); }
+          }, { threshold: 0.4 });
+          this.io2.observe(cs);
+        }
+      } else {
+        els.forEach(function (el) { el.classList.add('in'); });
+        this.setState({ n: 100 });
+      }
+
+      var nav = root.querySelector('[data-nav]');
+      var px = Array.prototype.slice.call(root.querySelectorAll('[data-px]'));
+      var words = Array.prototype.slice.call(root.querySelectorAll('[data-word]'));
+      var intro = root.querySelector('[data-intro]');
+      var line = root.querySelector('[data-tl]');
+      var tlSec = root.querySelector('[data-tlsec]');
+      var tick = function () {
+        self.raf = null;
+        var h = window.innerHeight || 800;
+        if (self.introUpdate) self.introUpdate();
+        var y = window.scrollY || document.documentElement.scrollTop || 0;
+        if (nav) nav.classList.toggle('solid', y > 40);
+        if (!reduce && !weak) {
+          px.forEach(function (el) {
+            var r = el.parentElement.getBoundingClientRect();
+            if (r.bottom < 0 || r.top > h) return;
+            var c = (r.top + r.height / 2 - h / 2) / h;
+            var s = parseFloat(el.getAttribute('data-px')) || 0.1;
+            el.style.transform = 'translate3d(0,' + (c * s * -200).toFixed(1) + 'px,0)';
+          });
+        }
+        if (intro && words.length) {
+          var ir = intro.getBoundingClientRect();
+          var p = Math.min(1, Math.max(0, (h * 0.9 - ir.top) / (h * 0.75)));
+          var n = words.length;
+          words.forEach(function (w, i) { w.style.opacity = (reduce || i / n < p) ? '1' : '0.13'; });
+        }
+        if (line && tlSec) {
+          var tr = tlSec.getBoundingClientRect();
+          var q = Math.min(1, Math.max(0, (h * 0.85 - tr.top) / (tr.height * 0.9)));
+          line.style.transform = 'scaleX(' + (reduce ? 1 : q).toFixed(3) + ')';
+        }
+      };
+      this.onScroll = function () { if (!self.raf) self.raf = requestAnimationFrame(tick); };
+      window.addEventListener('scroll', this.onScroll, { passive: true, capture: true });
+      window.addEventListener('resize', this.onScroll);
+      this.setupIntro(root, function () { return self.z || 1; }, reduce);
+      tick();
+
+      if (window.matchMedia && window.matchMedia('(pointer: fine)').matches) {
+        var cur = root.querySelector('[data-cursor-el]');
+        var mags = Array.prototype.slice.call(root.querySelectorAll('[data-magnetic]'));
+        var tx = -100, ty = -100, cx = -100, cy = -100;
+        this.onMove = function (e) {
+          tx = e.clientX; ty = e.clientY;
+          root.classList.add('has-cursor');
+          var t = e.target && e.target.closest ? e.target.closest('[data-cursor]') : null;
+          var label = t ? t.getAttribute('data-cursor') : '';
+          if (label !== self.state.cl) self.setState({ cl: label });
+          if (!reduce) {
+            mags.forEach(function (m) {
+              var r = m.getBoundingClientRect();
+              var mx = r.left + r.width / 2, my = r.top + r.height / 2;
+              var dx = e.clientX - mx, dy = e.clientY - my;
+              var near = Math.abs(dx) < r.width / 2 + 40 && Math.abs(dy) < r.height / 2 + 40;
+              m.style.transform = near ? 'translate3d(' + (dx * 0.18).toFixed(1) + 'px,' + (dy * 0.28).toFixed(1) + 'px,0)' : '';
+            });
+          }
+        };
+        this.onLeave = function () { root.classList.remove('has-cursor'); };
+        var loop = function () {
+          cx += (tx - cx) * 0.18; cy += (ty - cy) * 0.18;
+          var zz = self.z || 1; if (cur) cur.style.transform = 'translate3d(' + (cx / zz).toFixed(1) + 'px,' + (cy / zz).toFixed(1) + 'px,0)';
+          self.craf = requestAnimationFrame(loop);
+        };
+        window.addEventListener('mousemove', this.onMove, { passive: true });
+        document.addEventListener('mouseleave', this.onLeave);
+        loop();
+      }
+    } catch (err) {}
+  }
+
+  // ===== Intro: sequenza di fotogrammi guidata dallo scroll =====
+  setupIntro(root, getZoom, reduce) {
+    var self = this;
+    var sec = root.querySelector('[data-intro-seq]');
+    if (!sec) return;
+    var stage = sec.querySelector('[data-intro-stage]');
+    var cv = sec.querySelector('[data-intro-canvas]');
+    var bar = sec.querySelector('[data-intro-bar]');
+    var cnt = sec.querySelector('[data-intro-count]');
+    var cue = sec.querySelector('[data-intro-cue]');
+    var ld = sec.querySelector('[data-intro-load]');
+    var ctx = cv && cv.getContext ? cv.getContext('2d') : null;
+    if (!ctx) return;
+    var SHEETS = ['./assets/ba205359e5aecd7e1df8c1e01e743e6e.jpg', './assets/7ce50c32ca06eda992e16321fce48b63.jpg', './assets/b703f128b6fc3e89667c4a0cdeeb6dce.jpg', './assets/cc737f5e2553c49b9239c93f0017c3e6.jpg', './assets/58778afe8d03e5e1384fb1a813ab2531.jpg', './assets/a88b58205a0da7d447aec2b8e93f2b96.jpg', './assets/ad80a48da2c2e1b138fe789954f13b29.jpg', './assets/dcdbcc4e91f873a3d65a6be9f2235e41.jpg', './assets/193e00093370f31fcb12f08682d9c14b.jpg', './assets/049a309d311e7f2c147db8c61e4ec0b9.jpg', './assets/8eacf84c2d39c9d3b39ac96becb79929.jpg', './assets/b635d2f9cac5572842a5aa6f87854307.jpg', './assets/938bd142f21fe643b9db16088768c954.jpg', './assets/db5d366165cd7ffcb78741c06fac2c61.jpg', './assets/9c1b4cc38703515b73dcdeaad1d0a3ac.jpg'];
+    var PER = 12, COLS = 4, FW = 600, FH = 1066, TOTAL = 170;
+    var imgs = [], done = 0, shown = -1, curF = 0, target = 0, anim = null;
+    var bg = document.createElement('canvas'); bg.width = 36; bg.height = 22;
+    var bgx = bg.getContext('2d');
+    var ready = function (i) { var s = imgs[Math.floor(i / PER)]; return s && s.complete && s.naturalWidth > 0 ? s : null; };
+    var draw = function (i, force) {
+      var s = ready(i);
+      if (!s) { for (var j = i; j >= 0; j--) { if (ready(j)) { i = j; s = ready(j); break; } } }
+      if (!s || (i === shown && !force)) return;
+      shown = i;
+      var k = i % PER, sx = (k % COLS) * FW, sy = Math.floor(k / COLS) * FH;
+      var w = cv.width, h = cv.height;
+      ctx.fillStyle = '#050505'; ctx.fillRect(0, 0, w, h);
+      var cs = Math.max(w / FW, h / FH);
+      if (w / h < 0.8) {
+        ctx.drawImage(s, sx, sy, FW, FH, (w - FW * cs) / 2, (h - FH * cs) / 2, FW * cs, FH * cs);
+      } else {
+        var bs = Math.max(bg.width / FW, bg.height / FH);
+        bgx.drawImage(s, sx, sy, FW, FH, (bg.width - FW * bs) / 2, (bg.height - FH * bs) / 2, FW * bs, FH * bs);
+        ctx.save(); ctx.globalAlpha = 0.45; ctx.imageSmoothingEnabled = true; ctx.drawImage(bg, 0, 0, w, h); ctx.restore();
+        var g = ctx.createLinearGradient(0, 0, w, 0);
+        g.addColorStop(0, 'rgba(5,5,5,.9)'); g.addColorStop(0.5, 'rgba(5,5,5,.25)'); g.addColorStop(1, 'rgba(5,5,5,.9)');
+        ctx.fillStyle = g; ctx.fillRect(0, 0, w, h);
+        var ts = Math.min(w / FW, h / FH), dw = FW * ts, dh = FH * ts;
+        ctx.drawImage(s, sx, sy, FW, FH, (w - dw) / 2, (h - dh) / 2, dw, dh);
+      }
+      if (cnt) cnt.textContent = String(i + 1).padStart(3, '0');
+    };
+    var size = function () {
+      var z = getZoom();
+      var vh = window.innerHeight || 800;
+      stage.style.height = Math.min(vh / z, 1400) + 'px';
+      var dpr = Math.min(window.devicePixelRatio || 1, 2);
+      cv.width = Math.round(stage.clientWidth * dpr);
+      cv.height = Math.round(stage.clientHeight * dpr);
+      draw(Math.round(curF), true);
+    };
+    var step = function () {
+      anim = null;
+      curF += (target - curF) * 0.25;
+      if (Math.abs(target - curF) < 0.05) curF = target;
+      draw(Math.round(curF));
+      if (curF !== target) anim = requestAnimationFrame(step);
+    };
+    this.introUpdate = function () {
+      var r = sec.getBoundingClientRect(), sr = stage.getBoundingClientRect();
+      var p = Math.min(1, Math.max(0, -r.top / Math.max(1, r.height - sr.height)));
+      target = p * (TOTAL - 1);
+      if (!anim) anim = requestAnimationFrame(step);
+      if (bar) bar.style.transform = 'scaleX(' + p.toFixed(3) + ')';
+      if (cue) cue.style.opacity = p < 0.03 ? '1' : '0';
+      cv.style.opacity = String(1 - Math.max(0, (p - 0.88) / 0.12) * 0.75);
+      root.classList.toggle('intro-on', r.bottom > (window.innerHeight || 800) * 0.35);
+      if (r.bottom < (window.innerHeight || 800) * 0.9) root.classList.add('hero-in');
+    };
+    var load = function (n) {
+      if (n >= SHEETS.length) { if (ld) ld.style.opacity = '0'; return; }
+      var im = new Image();
+      im.decoding = 'async';
+      im.onload = im.onerror = function () {
+        done++;
+        if (ld) ld.textContent = 'Caricamento ' + Math.round(done / SHEETS.length * 100) + '%';
+        if (n === 0) size();
+        draw(Math.round(curF), true);
+        load(n + 1);
+      };
+      im.src = SHEETS[n];
+      imgs[n] = im;
+    };
+    this.onIntroResize = size;
+    window.addEventListener('resize', size);
+    size();
+    load(0);
+    this.introUpdate();
+  }
+
+  countUp() {
+    var self = this, start = null, dur = 1800;
+    var step = function (ts) {
+      if (!start) start = ts;
+      var k = Math.min(1, (ts - start) / dur);
+      var e = 1 - Math.pow(1 - k, 4);
+      self.setState({ n: Math.round(e * 100) });
+      if (k < 1) self.nraf = requestAnimationFrame(step);
+    };
+    this.nraf = requestAnimationFrame(step);
+  }
+
+  componentWillUnmount() {
+    try {
+      if (this.io) this.io.disconnect();
+      if (this.io2) this.io2.disconnect();
+      if (this.onScroll) { window.removeEventListener('scroll', this.onScroll, { capture: true }); window.removeEventListener('resize', this.onScroll); }
+      if (this.onMove) window.removeEventListener('mousemove', this.onMove);
+      if (this.onFit) window.removeEventListener('resize', this.onFit);
+      if (this.onMode) window.removeEventListener('resize', this.onMode);
+      if (this.onIntroResize) window.removeEventListener('resize', this.onIntroResize);
+      if (this.onLeave) document.removeEventListener('mouseleave', this.onLeave);
+      cancelAnimationFrame(this.raf); cancelAnimationFrame(this.craf); cancelAnimationFrame(this.nraf);
+    } catch (err) {}
+  }
+
+  renderVals() {
+    var self = this;
+    var accent = this.props.accent ?? '#e2583a';
+    var st = this.state || {};
+    var active = st.active ?? 0;
+    var open = st.open ?? 0;
+    var SV = [
+      ['Lavaggio premium', 'Lavaggio a mano con metodo a due secchi, prelavaggio a schiuma e asciugatura delicata. La base di ogni trattamento.'],
+      ['Detailing esterni', 'Carrozzeria, cerchi, vetri e plastiche trattati uno per uno, con prodotti specifici per ogni superficie.'],
+      ['Detailing interni', 'Aspirazione profonda, pulizia di tessuti, plastiche e bocchette. L’abitacolo torna come dovrebbe essere.'],
+      ['Lucidatura', 'Correzione di swirl, ologrammi e graffi superficiali per restituire profondità e brillantezza alla vernice.'],
+      ['Decontaminazione', 'Rimozione chimica e meccanica di ferro, catrame e residui che il lavaggio da solo non elimina.'],
+      ['Protezione ceramica', 'Un rivestimento che protegge la vernice e rende la manutenzione più semplice nel tempo.'],
+      ['Trattamento pelle', 'Pulizia delicata e nutrimento di sedili e rivestimenti: morbidi, idratati, senza lucido artificiale.'],
+      ['Ripristino fari', 'Fari opachi e ingialliti riportati alla trasparenza, con protezione UV finale.'],
+      ['Protezione carrozzeria', 'Soluzioni per preservare la vernice da agenti atmosferici, sale e contaminanti stradali.'],
+      ['Personalizzazione', 'Dettagli su misura per rendere la tua auto riconoscibile, nel rispetto del suo carattere.']
+    ];
+    var services = SV.map(function (x, i) {
+      var on = i === active;
+      return {
+        num: String(i + 1).padStart(2, '0'), title: x[0], desc: x[1],
+        oA: [0,1,3,5,7,8].indexOf(i) >= 0 ? 1 : 0, oB: (i === 2 || i === 6) ? 1 : 0, oC: (i === 4 || i === 9) ? 1 : 0,
+        bgpos: ((i * 37) % 100) + '% ' + ((i * 23) % 100) + '%',
+        isActive: on,
+        numColor: on ? accent : '#85817b',
+        titleColor: on ? '#efebe4' : '#a39f98',
+        shift: on ? 14 : 0, arrow: on ? 0 : -10,
+        pick: function () { if (self.state.active !== i) self.setState({ active: i }); }
+      };
+    });
+    var reasons = [
+      ['Precisione', 'Lavoriamo per zone, con luci d’ispezione e tempi dedicati. Nessun passaggio è lasciato al caso.'],
+      ['Esperienza', 'Conosciamo vernici, pelli e materiali diversi: sappiamo cosa chiede ogni superficie, e cosa evitare.'],
+      ['Tecnologia', 'Prodotti professionali, macchine di lucidatura e strumenti di misura per lavorare in sicurezza sulla vernice.'],
+      ['Cura', 'Trattiamo ogni auto come se fosse la nostra. Anche quella di tutti i giorni.'],
+      ['Trasparenza', 'Prima di iniziare ti diciamo cosa faremo, quanto tempo serve e quanto costa. Senza sorprese.']
+    ].map(function (x, i) { return { num: String(i + 1).padStart(2, '0'), title: x[0], desc: x[1] }; });
+    var steps = [
+      ['Prenotazione', 'Ci scrivi su WhatsApp o ci chiami. Fissiamo insieme giorno e orario.'],
+      ['Analisi del veicolo', 'Controlliamo vernice, interni e materiali sotto luce dedicata e ti proponiamo il trattamento giusto.'],
+      ['Trattamento', 'Eseguiamo il lavoro concordato, un’area alla volta, senza fretta.'],
+      ['Controllo finale', 'Ispezione completa sotto luce diretta prima di considerare il lavoro concluso.'],
+      ['Consegna', 'Ti riconsegniamo l’auto spiegandoti cosa abbiamo fatto e come mantenerla.']
+    ].map(function (x, i) { return { num: String(i + 1).padStart(2, '0'), title: x[0], desc: x[1] }; });
+    var faqs = [
+      ['Quanto dura un trattamento?', 'Dipende dal servizio e dalle condizioni del veicolo: da [DURATA MINIMA] per un lavaggio premium fino a [DURATA MASSIMA] per una lucidatura con protezione. Ti diamo sempre una stima prima di iniziare.'],
+      ['Come posso prenotare?', 'Scrivici su WhatsApp o chiamaci al +34 674 44 07 73. Concordiamo insieme giorno, orario e trattamento.'],
+      ['Quali tipi di veicoli trattate?', '[TIPOLOGIE DI VEICOLI TRATTATI]. Per veicoli particolari contattaci: valutiamo ogni caso.'],
+      ['Effettuate trattamenti per auto premium?', 'Sì. Ogni vettura viene trattata con prodotti e tecniche adatti alla sua vernice, ai suoi materiali e al suo valore.'],
+      ['Qual è la differenza tra lavaggio e detailing?', 'Il lavaggio rimuove lo sporco. Il detailing va oltre: corregge, rigenera e protegge ogni superficie, dentro e fuori, con tempi e strumenti dedicati.'],
+      ['Fate trattamenti di protezione della carrozzeria?', 'Sì, tra cui [TIPI DI PROTEZIONE]. Ti consigliamo la soluzione più adatta a come usi l’auto ogni giorno.'],
+      ['Posso lasciare l’auto per più ore?', 'Sì. Per i trattamenti più lunghi l’auto resta da noi il tempo necessario. [INFORMAZIONI SU CUSTODIA E RITIRO].'],
+      ['Come posso richiedere un preventivo?', 'Mandaci qualche foto dell’auto su WhatsApp con una breve descrizione di cosa desideri. Ti rispondiamo con una proposta chiara, senza impegno.']
+    ].map(function (x, i) {
+      var on = i === open;
+      return {
+        num: String(i + 1).padStart(2, '0'), q: x[0], a: x[1], isOpen: on,
+        rot: on ? 90 : 0, numColor: on ? accent : '#85817b',
+        toggle: function () { self.setState({ open: self.state.open === i ? -1 : i }); }
+      };
+    });
+    var prices = [
+      ['Piccola', '200€', ['50€', '30€', '120€']],
+      ['Media', '250€', ['60€', '40€', '150€']],
+      ['Grande', '310€', ['80€', '50€', '180€']]
+    ].map(function (x, i) {
+      var labels = ['Lavaggio interno ed esterno', 'Lavaggio motore', 'Pulizia tappezzeria'];
+      return { num: 'Auto ' + String(i + 1).padStart(2, '0'), size: x[0], total: x[1], rows: labels.map(function (l, k) { return { label: l, price: x[2][k] }; }) };
+    });
+    var cl = st.cl || '';
+    return {
+      isMob: !!st.mob, isDesk: !st.mob,
+      accent: accent,
+      services: services,
+      cur: services[active] || services[0],
+      reasons: reasons, steps: steps, faqs: faqs, prices: prices,
+      pos: st.pos ?? 50,
+      slide: function (e) { var v = parseFloat(e.target.value); if (!isNaN(v)) self.setState({ pos: v }); },
+      n: st.n ?? 0,
+      cl: cl, cw: cl ? 88 : 14, cbg: cl ? '#efebe4' : 'rgba(239,235,228,0)', clo: cl ? 1 : 0
+    };
+  }
+}
+</script>
+</body>
+</html>
